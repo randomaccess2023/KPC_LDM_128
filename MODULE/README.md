@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Clusters-Features : a Python module to evaluate the quality of clustering #
 <i> Made during an internship for iCube in Strasbourg, FR. The full report in French is available here : https://drive.google.com/file/d/1kkyCruqZeHsG30pGX1YvkyuHXZfx-BOf/</i>
 
@@ -2915,8 +2914,3 @@ CC.graph_reduction_density_3D(99,clusters=[0,1])
 
  
  
-=======
-# Implementation of a Conditional Latent Diffusion-Based Generative Model to Synthetically Create Unlabeled Histopathological Images
-
-To be updated...
->>>>>>> 09d0c8a8e578c808a36677f74d950e7d484b98eb
