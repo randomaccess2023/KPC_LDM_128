@@ -1,0 +1,3 @@
+# Implementation of a Conditional Latent Diffusion-Based Generative Model to Synthetically Create Unlabeled Histopathological Images
+
+To be updated...
