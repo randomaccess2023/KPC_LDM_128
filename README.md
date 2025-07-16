@@ -4,7 +4,7 @@ The code for the paper titled _**Implementation of a Conditional Latent Diffusio
 
 I will explain different _**folders**_ and _**files**_ available in this repository very briefly to make things easy for the users.
 
-### - Let's focus on the `clusters_14` folder first:
+- ### Let's focus on the `clusters_14` folder first:
 1. `part_1_training.ipynb`: This file has the code for the _first_ training of the **cLDM**.
 2. `part_2_finetuning1.ipynb`: This file features the code for the _finetuning-1_ (additional training-1) of the **cLDM**.
 3. `part_3_finetuning2.ipynb`: This file houses the code for the _finetuning-2_ (additional training-2) of the **cLDM**.
@@ -34,18 +34,27 @@ One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same
 
 _We only shared the code for **clusters_14**, but the same thing can be repeated for clusters 10, 11, 12, 13, 15, and 16 in six separate folders. Only a change in the variable named `n_clusters` needs to be made according to the desired number of clusters_.
 
-### - The folder `Figures` has 4 folders inside it: `Figure 1`, `Figure 2`, `Figure 3`, and `Figure 4`. These 4 folders have the figures that can be seen in the paper.
+- ### The folder `Figures` has 4 folders inside it: `Figure 1`, `Figure 2`, `Figure 3`, and `Figure 4`. These 4 folders have the figures that can be seen in the paper.
 
-### - The folder `MODULE` is need to calculate internal cluster validation indices: _Calinski-Harabasz index_, _C index_, _Dunn index_, _Hartigan index_, and _Mclain-Rao index_ utilizing the latent features.
+- ### The folder `MODULE` is need to calculate internal cluster validation indices: _Calinski-Harabasz index_, _C index_, _Dunn index_, _Hartigan index_, and _Mclain-Rao index_ utilizing the latent features.
 
 Check the script `internal_cluster_validation_metrics.ipynb` to see the deatils.
 
 >> Since we shared only the **clusters_14** folder, people can only see `HHH14_C14_D14.csv` file in this repository. Other required files like `HHH10_C10_D10.csv`, `HHH11_C11_D11.csv`, `HHH12_C12_D12.csv`, `HHH13_C13_D13.csv`, `HHH15_C15_D15.csv`, and `HHH16_C16_D16.csv` can be obtained by repeating the works shown in the **clusters_14** folder for **clusters_10**, **clusters_11**, **clusters_12**, **clusters_13**, **clusters_15**, and **clusters_16** folder.
 
-### - The folder `kpc_ldm` has the autoencoder model: _`vqvae_autoencoder_ckpt.pth`_. This pre-trained autoencoder is used for applying the diffusion and denoising processes in the latent space space of the images rather than the pixel spaces.
+- ### The folder `kpc_ldm` has the autoencoder model: _`vqvae_autoencoder_ckpt.pth`_. This pre-trained autoencoder is used for applying the diffusion and denoising processes in the latent space space of the images rather than the pixel spaces.
 
-### - The folder `weights` has the pre-trained weights of the VGG-16 model in the _`vgg.pth`_ file. These weights were used both in the _LPIPS model_ and _LPIPS metric_.
+- ### The folder `weights` has the pre-trained weights of the VGG-16 model in the _`vgg.pth`_ file. These weights were used both in the _LPIPS model_ and _LPIPS metric_.
 
+- ### Let's explain the last folder `pfiles`:
 
+It has many Python (`.py`) files.
+1. `blocks.py`: This file encompasses the building blocks for the autoencoder and the UNet.
+2. `discriminator.py`: This file has the code for the discriminator model.
+3. `linear_noise_scheduler.py`: This file holds the codebase for adding noise using a linear variance scheduler on latent features.
+4. `lpips.py`: This file incorporates the code for implementing the LPIPS model.
+5. `lpips_metric.py`: This file contains the code for computing the LPIPS metric.
+6. `unet_cond_base.py`: This file features the code for creating the UNet architecture. It uses functions from `blocks.py` file.
+7. `vqvae.py`: This file offers the code for constructing the autoencoder architecture. It uses functions from `blocks.py` file.
 
 To be updated...
