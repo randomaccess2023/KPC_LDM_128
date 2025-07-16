@@ -1,3 +1,51 @@
 # Implementation of a Conditional Latent Diffusion-Based Generative Model to Synthetically Create Unlabeled Histopathological Images
 
+The code for the paper titled _**Implementation of a Conditional Latent Diffusion-Based Generative Model to Synthetically Create Unlabeled Histopathological Images**_ has been shared in this _GitHub_ repository.
+
+I will explain different _**folders**_ and _**files**_ available in this repository very briefly to make things easy for the users.
+
+### - Let's focus on the `clusters_14` folder first:
+1. `part_1_training.ipynb`: This file has the code for the _first_ training of the **cLDM**.
+2. `part_2_finetuning1.ipynb`: This file features the code for the _finetuning-1_ (additional training-1) of the **cLDM**.
+3. `part_3_finetuning2.ipynb`: This file houses the code for the _finetuning-2_ (additional training-2) of the **cLDM**.
+4. `part_4_sampling_clustering.ipynb`: This file offers the code for clustering the training images using the **cLDM** obtained after finetuning-2. The sampling part has also been performed with a few selected test samples using the _second_ finetuned **cLDM**.
+5. `part_5_latent_space_extraction.ipynb`: This file provides the implementation for saving the latent space in a `.csv` file to use later for performing _**internal cluster validation**_ using a _second_ finetuned **Classifier**.
+6. `part_6_conditional_generation.ipynb`: This file encompasses the code for generating 10,000 images from the conditioning of 10,000 training images using the **cLDM** obtained after finetuning-2.
+7. `part_7_sampling_after_first_training.ipynb`: This file includes the source code to carry out sampling using the conditioning of a few selected test samples after the _first_ training of the **cLDM**.
+8. `part_8_sampling_after_finetuning1.ipynb`: This file hosts the code to do sampling with a few selected test samples using the **cLDM** obtained _finetuning-1_.
+9. `part_9_conditional_generation_using_cluster_IDs.ipynb`: This file incorporates the code for generating similar samples seen in the clustering output of the training images using only cluster IDs.
+10. `part_10_SSIM`: This file stores the code for calculating the **SSIM** metric using both the original (training) and generated images.
+11. `part_11_MSSSIM`: This file holds the codebase for quantifying the **MS-SSIM** metric using both the original (training) and generated images.
+12. `part_12_LPIPS`: This file contains the code for computing the **LPIPS** metric using both the original (training) and generated images.
+
+>> In addition to these 12 files, there is a folder called **models_14** within **clusters_14** which has two models: `classifier_finetuning2_ckpt_20250128_70_14.pth` and `classifier_training_ckpt_20250127_600_14.pth`. Three more models are necessary for executing the 12 `.ipynb` files shown above: `unet_finetuning1_ckpt_20250128_130_14.pth`, `unet_finetuning2_ckpt_20250128_70_14.pth`, and `unet_training_ckpt_20250127_600_14.pth`. Each of these 3 file has a size of around 93 MB, and, therefore, they couldn't be uploaded to this repository.
+
+#### We will provide update in the future if these 3 UNet models can be accessed somehow.
+
+One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same `.csv` file that we mentioned in `part_5_latent_space_extraction.ipynb`.
+
+>> An additional information: Viewers can see this address in multiple files -> **'/project/dsc-is/nono/Documents/kpc/dat0'**, which points to the location of our dataset used for this experiment in our JupyterHub server -> **'slice128_Block2_11K.npy'**. This is a _NumPy_ file and it has a size of 4.33 GB. We couldn't upload it here. Users can set up this address according to their working environment.
+
+#### We will provide update in the future if our dataset can be accessed somehow.
+
+>> Finally, for calculating image evaluation metrics like `SSIM`, `MS-SSIM`, and `LPIPS`, training image directory (**'org'**) and generated image directory (in this case, **'gen_14'**) are required. These directories contain 10,000 images each, and together they have a size of 132 MB. We couldn't upload them here in GitHub.
+
+#### We will provide update in the future if these two directories can be accessed somehow.
+
+_We only shared the code for **clusters_14**, but the same thing can be repeated for clusters 10, 11, 12, 13, 15, and 16 in six separate folders. Only a change in the variable named `n_clusters` needs to be made according to the desired number of clusters_.
+
+### - The folder `Figures` has 4 folders inside it: `Figure 1`, `Figure 2`, `Figure 3`, and `Figure 4`. These 4 folders have the figures that can be seen in the paper.
+
+### - The folder `MODULE` is need to calculate internal cluster validation indices: _Calinski-Harabasz index_, _C index_, _Dunn index_, _Hartigan index_, and _Mclain-Rao index_ utilizing the latent features.
+
+Check the script `internal_cluster_validation_metrics.ipynb` to see the deatils.
+
+>> Since we shared only the **clusters_14** folder, people can only see `HHH14_C14_D14.csv` file in this repository. Other required files like `HHH10_C10_D10.csv`, `HHH11_C11_D11.csv`, `HHH12_C12_D12.csv`, `HHH13_C13_D13.csv`, `HHH15_C15_D15.csv`, and `HHH16_C16_D16.csv` can be obtained by repeating the works shown in the **clusters_14** folder for **clusters_10**, **clusters_11**, **clusters_12**, **clusters_13**, **clusters_15**, and **clusters_16** folder.
+
+### - The folder `kpc_ldm` has the autoencoder model: _`vqvae_autoencoder_ckpt.pth`_. This pre-trained autoencoder is used for applying the diffusion and denoising processes in the latent space space of the images rather than the pixel spaces.
+
+### - The folder `weights` has the pre-trained weights of the VGG-16 model in the _`vgg.pth`_ file. These weights were used both in the _LPIPS model_ and _LPIPS metric_.
+
+
+
 To be updated...
