@@ -57,4 +57,8 @@ It has many Python (`.py`) files.
 6. `unet_cond_base.py`: This file features the code for creating the UNet architecture. It uses functions from `blocks.py` file.
 7. `vqvae.py`: This file offers the code for constructing the autoencoder architecture. It uses functions from `blocks.py` file.
 
-To be updated...
+> Finally, `train_autoencoder.ipynb` script includes the source code for training the autoencoder. `autoencoder_output.ipynb` file displays the code for obtaining reconstructed samples after training the autoencoder. `save_training_images.ipynb` shows the code for saving training images in a directory for evaluating image quality later.
+
+## This repository uses `MIT License`. Read the terms and conditions from _LICENSE_ text file.
+
+# Read the paper from here: [KPC_LDM](https://www.mdpi.com/2306-5354/12/7/764)
