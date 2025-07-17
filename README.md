@@ -20,7 +20,7 @@ I will explain different _**folders**_ and _**files**_ available in this reposit
 
 >> In addition to these 12 files, there is a folder called **models_14** within **clusters_14** which has two models: `classifier_finetuning2_ckpt_20250128_70_14.pth` and `classifier_training_ckpt_20250127_600_14.pth`. Three more models are necessary for executing the 12 `.ipynb` files shown above: `unet_finetuning1_ckpt_20250128_130_14.pth`, `unet_finetuning2_ckpt_20250128_70_14.pth`, and `unet_training_ckpt_20250127_600_14.pth`. Each of these 3 file has a size of around 93 MB, and, therefore, they couldn't be uploaded to this repository.
 
-#### We will provide update in the future if these 3 UNet models can be accessed somehow.
+>>> These 3 UNet models can be found [here](https://doi.org/10.6084/m9.figshare.29588807). There is a `.zip` file and by unpacking, a folder called `trained_models` can be observed. Inside this folder, the 3 UNet models are present. These 3 UNet models will have to be moved in the **`models_14`** folder.
 
 One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same `.csv` file that we mentioned in `part_5_latent_space_extraction.ipynb`.
 
