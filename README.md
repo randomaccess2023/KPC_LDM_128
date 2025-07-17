@@ -26,7 +26,7 @@ One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same
 
 >> An additional information: Viewers can see this address in multiple files -> **'/project/dsc-is/nono/Documents/kpc/dat0'**, which points to the location of our dataset used for this experiment in our JupyterHub server -> **'slice128_Block2_11K.npy'**. This is a _NumPy_ file and it has a size of 4.33 GB. We couldn't upload it here. Users can set up this address according to their working environment.
 
-#### We will provide update in the future if our dataset can be accessed somehow.
+>>> This dataset can be accessed from here: [slice128_Block2_11K.npy](https://doi.org/10.6084/m9.figshare.29588651).
 
 >> Finally, for calculating image evaluation metrics like `SSIM`, `MS-SSIM`, and `LPIPS`, training image directory (**'org'**) and generated image directory (in this case, **'gen_14'**) are required. These directories contain 10,000 images each, and together they have a size of approximately 132 MB.
 
