@@ -34,9 +34,9 @@ One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same
 
 _We only shared the code for **clusters_14**, but the same thing can be repeated for clusters 10, 11, 12, 13, 15, and 16 in six separate folders. Only a change in the variable named `n_clusters` needs to be made according to the desired number of clusters_.
 
-- ### The folder `Figures` has 4 folders inside it: `Figure 1`, `Figure 2`, `Figure 3`, and `Figure 4`. These 4 folders have the figures that can be seen in the paper.
+- ### The folder `Figures` has 4 folders inside it: `Figure 1`, `Figure 2`, `Figure 3`, and `Figure 4`. These 4 folders have the figures that can be seen in the journal.
 
-- ### The folder `MODULE` is need to calculate internal cluster validation indices: _Calinski-Harabasz index_, _C index_, _Dunn index_, _Hartigan index_, and _Mclain-Rao index_ utilizing the latent features.
+- ### The folder `MODULE` is needed to calculate internal cluster validation indices: _Calinski-Harabasz index_, _C index_, _Dunn index_, _Hartigan index_, and _Mclain-Rao index_ utilizing the latent features.
 
 Check the script `internal_cluster_validation_metrics.ipynb` to see the deatils.
 
