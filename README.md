@@ -28,9 +28,9 @@ One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same
 
 #### We will provide update in the future if our dataset can be accessed somehow.
 
->> Finally, for calculating image evaluation metrics like `SSIM`, `MS-SSIM`, and `LPIPS`, training image directory (**'org'**) and generated image directory (in this case, **'gen_14'**) are required. These directories contain 10,000 images each, and together they have a size of 132 MB. We couldn't upload them here in GitHub.
+>> Finally, for calculating image evaluation metrics like `SSIM`, `MS-SSIM`, and `LPIPS`, training image directory (**'org'**) and generated image directory (in this case, **'gen_14'**) are required. These directories contain 10,000 images each, and together they have a size of approximately 132 MB.
 
-#### We will provide update in the future if these two directories can be accessed somehow.
+>>> The directories can be downloaded from [here](https://doi.org/10.6084/m9.figshare.29588849). There is a `.zip` file named **`Images.zip`**. By unzipping, two folders can be found in the `Images` folder: `org` and `gen_14`. Put the `gen_14` folder inside the _**`clusters_14`**_ directory and the `org` folder in the _**`KPC_LDM_128`**_ directory.
 
 _We only shared the code for **clusters_14**, but the same thing can be repeated for clusters 10, 11, 12, 13, 15, and 16 in six separate folders. Only a change in the variable named `n_clusters` needs to be made according to the desired number of clusters_.
 
