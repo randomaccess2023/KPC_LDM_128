@@ -22,7 +22,7 @@ I will explain different _**folders**_ and _**files**_ available in this reposit
 
 >>> These 3 UNet models can be found here: [3 UNet models](https://doi.org/10.6084/m9.figshare.29588807). There is a `.zip` file and by unpacking, a folder called `trained_models` can be observed. Inside this folder, the 3 UNet models are present. These 3 UNet models will have to be moved in the **`models_14`** folder.
 
-One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same `.csv` file that we mentioned in `part_5_latent_space_extraction.ipynb`.
+One more file is available in this file: `HHH14_C14_D14.csv`. This is the same `.csv` file that we mentioned in `part_5_latent_space_extraction.ipynb`.
 
 >> An additional information: Viewers can see this address in multiple files -> **'/project/dsc-is/nono/Documents/kpc/dat0'**, which points to the location of our dataset used for this experiment in our JupyterHub server -> **'slice128_Block2_11K.npy'**. This is a _NumPy_ file and the size of it is around 4 GB. We couldn't upload it here. Users can set up this address according to their working environment.
 
