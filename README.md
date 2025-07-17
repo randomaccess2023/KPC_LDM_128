@@ -42,7 +42,7 @@ Check the script `internal_cluster_validation_metrics.ipynb` to see the deatils.
 
 >> Since we shared only the **clusters_14** folder, people can only see `HHH14_C14_D14.csv` file in this repository. Other required files like `HHH10_C10_D10.csv`, `HHH11_C11_D11.csv`, `HHH12_C12_D12.csv`, `HHH13_C13_D13.csv`, `HHH15_C15_D15.csv`, and `HHH16_C16_D16.csv` can be obtained by repeating the works shown in the **clusters_14** folder for **clusters_10**, **clusters_11**, **clusters_12**, **clusters_13**, **clusters_15**, and **clusters_16** folder.
 
-- ### The folder `kpc_ldm` has the autoencoder model: _`vqvae_autoencoder_ckpt.pth`_. This pre-trained autoencoder is used for applying the diffusion and denoising processes in the latent space space of the images rather than the pixel spaces.
+- ### The folder `kpc_ldm` has the autoencoder model: _`vqvae_autoencoder_ckpt.pth`_. This pre-trained autoencoder is used for applying the diffusion and denoising processes in the latent space of the images rather than the pixel space.
 
 - ### The folder `weights` has the pre-trained weights of the VGG-16 model in the _`vgg.pth`_ file. These weights were used both in the _LPIPS model_ and _LPIPS metric_.
 
