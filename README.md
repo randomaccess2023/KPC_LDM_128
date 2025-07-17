@@ -20,7 +20,7 @@ I will explain different _**folders**_ and _**files**_ available in this reposit
 
 >> In addition to these 12 files, there is a folder called **models_14** within **clusters_14** which has two models: `classifier_finetuning2_ckpt_20250128_70_14.pth` and `classifier_training_ckpt_20250127_600_14.pth`. Three more models are necessary for executing the 12 `.ipynb` files shown above: `unet_finetuning1_ckpt_20250128_130_14.pth`, `unet_finetuning2_ckpt_20250128_70_14.pth`, and `unet_training_ckpt_20250127_600_14.pth`. Each of these 3 file has a size of around 93 MB, and, therefore, they couldn't be uploaded to this repository.
 
->>> These 3 UNet models can be found [3 UNet models](https://doi.org/10.6084/m9.figshare.29588807). There is a `.zip` file and by unpacking, a folder called `trained_models` can be observed. Inside this folder, the 3 UNet models are present. These 3 UNet models will have to be moved in the **`models_14`** folder.
+>>> These 3 UNet models can be found here: [3 UNet models](https://doi.org/10.6084/m9.figshare.29588807). There is a `.zip` file and by unpacking, a folder called `trained_models` can be observed. Inside this folder, the 3 UNet models are present. These 3 UNet models will have to be moved in the **`models_14`** folder.
 
 One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same `.csv` file that we mentioned in `part_5_latent_space_extraction.ipynb`.
 
@@ -30,7 +30,7 @@ One more file is available in this folder: `HHH14_C14_D14.csv`. This is the same
 
 >> Finally, for calculating image evaluation metrics like `SSIM`, `MS-SSIM`, and `LPIPS`, training image directory (**'org'**) and generated image directory (in this case, **'gen_14'**) are required. These directories contain 10,000 images each, and together they have a size of approximately 132 MB.
 
->>> The directories can be downloaded from [org & gen_14](https://doi.org/10.6084/m9.figshare.29588849). There is a `.zip` file named **`Images.zip`**. By unzipping, two folders can be found in the `Images` folder: `org` and `gen_14`. Put the `gen_14` folder inside the _**`clusters_14`**_ directory and the `org` folder in the _**`KPC_LDM_128`**_ directory.
+>>> The directories can be downloaded from here: [org & gen_14](https://doi.org/10.6084/m9.figshare.29588849). There is a `.zip` file named **`Images.zip`**. By unzipping, two folders can be found in the `Images` folder: `org` and `gen_14`. Put the `gen_14` folder inside the _**`clusters_14`**_ directory and the `org` folder in the _**`KPC_LDM_128`**_ directory.
 
 _We only shared the code for **clusters_14**, but the same thing can be repeated for clusters 10, 11, 12, 13, 15, and 16 in six separate folders. Only a change in the variable named `n_clusters` needs to be made according to the desired number of clusters_.
 
